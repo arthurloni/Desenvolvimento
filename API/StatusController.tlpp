@@ -4,10 +4,14 @@
 
 Class StatusController
 
+    Public Method New()
     @GET("/Status")
     Public Method RecebeStatus()
 
 EndClass
+
+Method New() Class StatusController
+Return self
 
 Method RecebeStatus() Class StatusController
 

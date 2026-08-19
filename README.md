@@ -1,2 +1,3 @@
-# Estudos-Protheus
-Repository criado com foco nos estudos pessoais do ADVPL\TLPP\POUI, foco desses estudos e está desenvolvendo projetos pessoais para dominar utilização de APIs, criação de tela com POUI, e utilização de TLPP
+# Estudos-Dev
+Foi criado esse repositório com foco no aprendizagem de varias habilidades diferentes, principalmente para evoluir como desenvolvedor ADVPL/TLPP, Aprendendo a mexer com POUI, ferramenta do Protheus que trabalha com Angular para criação de telas front-ent otimizadas e customizadas, trabalhando com JavaScript,TypeScript,Html,Css.
+Focando também em lógica de negócio

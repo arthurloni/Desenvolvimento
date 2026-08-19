@@ -1,0 +1,77 @@
+body {
+    background-image: url('TelaLoginFundoCss.jpg');
+    color: white;
+}
+
+.BlocoGeral {
+    width: 500px;
+    height: 500px;
+    background-color: #fefeff;
+    border-radius: 5%; 
+    display: block;    
+    margin: 135px auto;
+    overflow: hidden;   
+}
+
+.Titulo1 {
+    color: #191970;
+    text-align: center;
+    margin-top: 40px; 
+    margin-bottom: 20px;
+}
+
+.Titulo2 {
+    color: #191970;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px; /* Controla a distância entre a palavra Email e o Bloco */
+    font-size: 16px;
+}
+
+.Titulo3 {
+    color: #191970;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px; /* Controla a distância entre a palavra Senha e o Bloco */
+    font-size: 16px;
+}
+
+.BlocoConteudo1 {
+    width: 200px;
+    height: 60px;
+    background-color: #191970;
+    border-radius: 15px;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    margin: 0 auto 30px auto;
+    overflow: hidden; 
+}
+
+.BlocoDados1 {
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;    
+}
+
+.BlocoConteudo2 {
+    width: 200px;
+    height: 60px;
+    background-color: #191970;
+    border-radius: 15px; 
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    margin: 0 auto;         
+    overflow: hidden; 
+}
+
+.BlocoDados2 {
+    width: 190px;
+    height: 50px;
+    border-radius: 10px; 
+    border: none;
+    outline: none;
+    box-sizing: border-box;    
+}

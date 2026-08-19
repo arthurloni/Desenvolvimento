@@ -1,0 +1,22 @@
+#INCLUDE "TOTVS.CH"
+#INCLUDE "TLPP-CORE.TH"
+#INCLUDE "TLPP-REST.TH"
+
+Class StatusController
+
+    Public Method New()
+    @GET("/Status")
+    Public Method RecebeStatus()
+
+EndClass
+
+Method New() Class StatusController
+Return self
+
+Method RecebeStatus() Class StatusController
+
+    Local oJson := JsonObject():New()
+
+    oJson["Status"] := "online"
+
+Return oJson

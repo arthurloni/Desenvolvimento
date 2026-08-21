@@ -4,31 +4,57 @@ body {
 }
 
 .BlocoGeral {
-    width: 500px;
-    height: 500px;
+    height: 500px;  /* Altura */
+    width: 500px;  /* largura */
     background-color: #fefeff;
-    border-radius: 5%; 
+    border-radius: 5%;  /* Borda do bloco */
     display: block;    
     margin: 135px auto;
     overflow: hidden;   
 }
 
-.Titulo1 {
+.TituloLogin {
     color: #191970;
     text-align: center;
     margin-top: 40px; 
     margin-bottom: 20px;
 }
 
-.Titulo2 {
+.PrgLogin {
+    color: #000000;
+    text-align: center;
+    margin-top: 1px; 
+    margin-bottom: 0px;
+}
+
+.TituloUser {
     color: #191970;
     text-align: center;
-    margin-top: 0;
+    margin-top: 40px; /* Altura do TOP com espaçamento do titulo do email */
     margin-bottom: 8px; /* Controla a distância entre a palavra Email e o Bloco */
     font-size: 16px;
 }
 
-.Titulo3 {
+.BlocoUser {
+    height: 60px;
+    width: 200px;
+    background-color: #191970;
+    border-radius: 15px;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    margin: 10px auto 10px auto; /* Cima, Direita, Baixo, Esquerda */
+    overflow: hidden; 
+}
+
+.BlocoInfoUser {
+    height: 50px;
+    width: 190px;
+    border-radius: 10px;
+    box-sizing: border-box;    
+}
+
+.TituloSenha {
     color: #191970;
     text-align: center;
     margin-top: 0;
@@ -36,28 +62,9 @@ body {
     font-size: 16px;
 }
 
-.BlocoConteudo1 {
-    width: 200px;
+.BlocoSenha {
     height: 60px;
-    background-color: #191970;
-    border-radius: 15px;
-    display: flex;             
-    justify-content: center;   
-    align-items: center;       
-    margin: 0 auto 30px auto;
-    overflow: hidden; 
-}
-
-.BlocoDados1 {
-    width: 190px;
-    height: 50px;
-    border-radius: 10px;
-    box-sizing: border-box;    
-}
-
-.BlocoConteudo2 {
     width: 200px;
-    height: 60px;
     background-color: #191970;
     border-radius: 15px; 
     display: flex;             
@@ -67,11 +74,27 @@ body {
     overflow: hidden; 
 }
 
-.BlocoDados2 {
-    width: 190px;
+.BlocoInfoSenha {
     height: 50px;
+    width: 190px;
     border-radius: 10px; 
     border: none;
     outline: none;
     box-sizing: border-box;    
+}
+
+.lembreMe { /* Checkbox nao funcionando para marcar */
+    height: 0px;
+    width: 104px;
+    margin-left: 150px;
+    color: #000000;
+}
+
+.BotaoEntrar {
+    height: 30px;
+    width: 100px;
+    margin-left: 200px;
+    background-color:#191970;
+    color: #fefeff;
+    margin-top: 50px;
 }

@@ -4,17 +4,17 @@ body {
 }
 
 .BlocoGeral {
-    height: 500px;  /* Altura */
-    width: 500px;  /* largura */
-    background-color: #ffffff;
-    border-radius: 50px;  /* Borda do bloco */
-    display: block;    
+    height: 500px;               /* Altura */
+    width: 500px;                /* largura */
+    background-color: #ffffff; /* Cor de fundo */
+    border-radius: 50px;         /* Borda do bloco */
+    display: block;              /* transforma e faz se comportar como um bloco */   
     margin: 135px auto;
-    overflow: hidden;   
+    overflow: hidden;            /* esconde o que ultrapassar */
 }
 
 .TituloLogin {
-    color: #191970;
+    color: #191970;            /* Cor do texto */
     text-align: center;
     margin-top: 40px; 
     margin-bottom: 20px;
@@ -30,20 +30,20 @@ body {
 .TituloUser {
     color: #191970;
     text-align: center;
-    margin-top: 40px; /* Altura do TOP com espaçamento do titulo do email */
-    margin-bottom: 8px; /* Controla a distância entre a palavra Email e o Bloco */
+    margin-top: 40px;             /* Altura do TOP com espaçamento do titulo do email */
+    margin-bottom: 8px;           /* Controla a distância entre a palavra Email e o Bloco */
     font-size: 16px;
 }
 
 .BlocoUser {
     height: 60px;
-    width: 200px;
+    width: 200px;                 /* width: 10ch largura equivalente a 10 letras (10ch) */
     background-color: #191970;
     border-radius: 15px;
     display: flex;             
     justify-content: center;   
     align-items: center;       
-    margin: 10px auto 10px auto; /* Cima, Direita, Baixo, Esquerda */
+    margin: 10px auto 10px auto;  /* Cima, Direita, Baixo, Esquerda */
     overflow: hidden; 
 }
 
@@ -60,7 +60,7 @@ body {
     color: #191970;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 8px; /* Controla a distância entre a palavra Senha e o Bloco */
+    margin-bottom: 8px;           /* Controla a distância entre a palavra Senha e o Bloco */
     font-size: 16px;
 }
 
@@ -86,16 +86,13 @@ body {
 }
 
 .EsqueciSenha {
-    margin-left: 240px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 157px;
     color: #191970; 
     font-size: 12px;
+    text-decoration: none;
 }
-
-.CriarConta {
-    margin-left: 240px;
-    color: #191970; 
-    font-size: 12px;
-}   
 
 .BotaoEntrar {
     height: 30px;
@@ -106,4 +103,22 @@ body {
     margin-top: 20px;
     border-radius: 30px;
     outline: none;
+}
+
+.CriarConta {
+    display: block;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.Text1 {
+    color: #000000;
+    font-size: 13px;
+}
+
+.Text2 {
+    color: #191970;
+    font-size: 14px;
 }

@@ -9,21 +9,25 @@
 <body>
 
     <div class="BlocoGeral">
-        <h1 class="TituloLogin">Faça seu login</h1>
-        <p class="PrgLogin">Coloque suas Informações abaixo.</p>
-        <h3 class="TituloUser">Usuario</h3>
-        <div class="BlocoUser">
-            <input class="BlocoInfoUser" type="text">
-        </div>
 
-        <h3 class="TituloSenha">Senha</h3>
-        <div class="BlocoSenha">
-            <input class="BlocoInfoSenha" type="text">
+        <h1 class="TituloLogin">Faça seu login.</h1>
+        <p class="PrgLogin">Coloque suas Informações abaixo.</p>
+        
+        <h3 class="TituloUser">Usuario</h3>
+
+        <div class="BlocoUser">
+            <input class="BlocoInfoUser" type="text"> <!-- Tipo especifico para usuario -->
         </div>
         
-        <div class="lembreMe">
-            <input class="CaixaLembrar" type="checkbox">
-            <label for="CaixaLembrar">Lembrar-me</label>
+        <h3 class="TituloSenha">Senha</h3>
+        
+        <div class="BlocoSenha">
+            <input class="BlocoInfoSenha" type="password"> <!-- Tipo especifico para senha -->
+        </div>
+
+        <div class="Segundarios">
+            <a class="EsqueciSenha" href="EsqueciSenha.html">Esqueci minha senha</a>
+            <a class="CriarConta"   href="TelaCadastro.html">Criar uma conta</a>
         </div>
 
         <button class="BotaoEntrar">ENTRAR</button>

@@ -1,13 +1,13 @@
 body {
     background-image: url('TelaLoginFundoCss.jpg');
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .BlocoGeral {
     height: 500px;  /* Altura */
     width: 500px;  /* largura */
-    background-color: #fefeff;
-    border-radius: 5%;  /* Borda do bloco */
+    background-color: #ffffff;
+    border-radius: 50px;  /* Borda do bloco */
     display: block;    
     margin: 135px auto;
     overflow: hidden;   
@@ -50,7 +50,9 @@ body {
 .BlocoInfoUser {
     height: 50px;
     width: 190px;
-    border-radius: 10px;
+    border-radius: 10px; 
+    border: none;
+    outline: none;
     box-sizing: border-box;    
 }
 
@@ -83,12 +85,17 @@ body {
     box-sizing: border-box;    
 }
 
-.lembreMe { /* Checkbox nao funcionando para marcar */
-    height: 0px;
-    width: 104px;
-    margin-left: 150px;
-    color: #000000;
+.EsqueciSenha {
+    margin-left: 240px;
+    color: #191970; 
+    font-size: 12px;
 }
+
+.CriarConta {
+    margin-left: 240px;
+    color: #191970; 
+    font-size: 12px;
+}   
 
 .BotaoEntrar {
     height: 30px;
@@ -96,5 +103,7 @@ body {
     margin-left: 200px;
     background-color:#191970;
     color: #fefeff;
-    margin-top: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    outline: none;
 }

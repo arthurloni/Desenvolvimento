@@ -24,22 +24,26 @@
 
         <h1 class="TituloLogin">Faça seu login.</h1>
         <p class="PrgLogin">Coloque suas Informações abaixo.</p>
-        
-        <h3 class="TituloUser">Usuario</h3>
 
-        <div class="BlocoUser">
-            <input class="BlocoInfoUser" type="text"> <!-- Tipo especifico para usuario -->
-        </div>
-        
-        <h3 class="TituloSenha">Senha</h3>
-        
-        <div class="BlocoSenha">
-            <input class="BlocoInfoSenha" type="password"> <!-- Tipo especifico para senha -->
-        </div>
+        <form class="BlocoFormLogin">
 
-        <a class="EsqueciSenha" href="/Frontend/HTML/EsqueciSenha/EsqueciSenha.html">Esqueci minha senha</a>
+            <h3 class="TituloUser">Usuario</h3>
 
-        <button class="BotaoEntrar">ENTRAR</button>
+            <div class="BlocoUser">
+                <input class="BlocoInfoUser" type="text" id="User" name="User" required> <!-- Tipo especifico para usuario -->
+            </div>
+            
+            <h3 class="TituloSenha">Senha</h3>
+            
+            <div class="BlocoSenha">
+                <input class="BlocoInfoSenha" type="password" id="BlocoInfoSenha" name="BlocoInfoSenha" required> <!-- Tipo especifico para senha -->
+            </div>
+
+            <a class="EsqueciSenha" href="/Frontend/HTML/EsqueciSenha/EsqueciSenha.html">Esqueci minha senha</a>
+            
+            <button class="BotaoEntrar">ENTRAR</button>
+
+        </form>
 
         <a class="CriarConta" href="/Frontend/HTML/Cadastro/TelaCadastro.html">
             <span class="Text1">Não tem conta ainda?</span>

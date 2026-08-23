@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/Frontend/CSS/EsqueciSenha/RedefinirSenha.css">
+    <link rel="stylesheet" href="/Frontend/CSS/EsqueciSenha/EsqueciSenha.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedefinirSenha</title>
+    <title>EsqueciSenha</title>
 </head>
 <body>
     
     <div class="BlocoGeral">
 
-        <h1 class="TituloRedefinir">Redefinição de senha.</h1>
-        <p class="PrgRedefinir">Preencha abaixo com sua senha nova.</p>
+        <h1 class="TituloLogin">Esqueceu senha?</h1>
+        <p class="PrgLogin">Coloque suas Informações abaixo para redefinir.</p>
 
         <form class="BlocoForm">
-            <h3 class="TituloSenha1">Senha</h3>
+            <h3 class="TituloUser">Usuario</h3>
 
-            <div class="BlocoSenha1"> 
-                <input class="Senha1" type="password" id="Senha1" name="Senha1" required> <!-- Tipo especifico para Senha -->
-                <button type="button" class="BotaoOlho" onclick="mostrarSenha('Senha1', this)"> <!-- Froma de mostrar senha, utilizando função criada via Js -->
-                    <img src="/Frontend/IMG/MostrarSenha/OlhoSenha.png" alt="Mostrar senha">
-                </button>
+            <div class="BlocoUser"> 
+                <input class="BlocoInfoUser" type="text" type="text" id="User" name="User" required> <!-- Tipo especifico para usuario -->
+            </div>
+            
+            <h3 class="TituloEmail">E-mail</h3>
+
+            <div class="BlocoEmail">
+                <input class="BlocoInfoEmail" type="email" id="email" name="email" required> <!-- Tipo especifico para email -->
             </div>
 
-            <h3 class="TituloSenha2">Confirmar Senha</h3>
+            <button class="BotaoEnviarCod" type="submit">Enviar</button>
 
-            <div class="BlocoSenha2">
-                <input class="Senha2" type="password" id="Senha2" name="Senha2" required> <!-- Tipo especifico para Senha -->
-                <button type="button" class="BotaoOlho" onclick="mostrarSenha('Senha2', this)"> <!-- Froma de mostrar senha, utilizando função criada via Js -->
-                    <img src="/Frontend/IMG/MostrarSenha/OlhoSenha.png" alt="Mostrar senha">
-                </button>
-            </div>
-
-            <button class="RedefinirSenha" type="submit">Redefinir</button>
-
+            <p class="PrgEmail">Um codigo foi enviado ao seu E-mail.</p>
         </form>
 
     </div>

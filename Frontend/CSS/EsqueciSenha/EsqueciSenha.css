@@ -1,0 +1,104 @@
+body {
+    background-image: url('/Frontend/IMG/login/TelaLoginFundoCss.jpg');
+    color: rgb(255, 255, 255);
+}
+
+.BlocoGeral {
+    height: 500px;               /* Altura */
+    width: 500px;                /* largura */
+    background-color: #ffffff; /* Cor de fundo */
+    border-radius: 50px;         /* Borda do bloco */
+    display: block;              /* transforma e faz se comportar como um bloco */   
+    margin: 135px auto;
+    overflow: hidden;            /* esconde o que ultrapassar */
+}
+
+.TituloLogin {
+    color: #191970;            /* Cor do texto */
+    text-align: center;
+    margin-top: 40px; 
+    margin-bottom: 20px;
+}
+
+.PrgLogin {
+    color: #000000;
+    text-align: center;
+    margin-top: 1px; 
+    margin-bottom: 0px;
+}
+
+.TituloUser {
+    color: #191970;
+    text-align: center;
+    margin-top: 20px;             /* Altura do TOP com espaçamento do titulo do email */
+    margin-bottom: 8px;           /* Controla a distância entre a palavra Email e o Bloco */
+    font-size: 16px;
+}
+
+.BlocoUser {
+    height: 60px;
+    width: 200px;                 /* width: 10ch largura equivalente a 10 letras (10ch) */
+    background-color: #191970;
+    border-radius: 15px;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    margin: 10px auto 10px auto;  /* Cima, Direita, Baixo, Esquerda */
+    overflow: hidden; 
+}
+
+.BlocoInfoUser {
+    height: 50px;
+    width: 190px;
+    border-radius: 10px; 
+    border: none;
+    outline: none;
+    box-sizing: border-box;    
+}
+
+.TituloEmail {
+    color: #191970;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.BlocoEmail {
+    height: 60px;
+    width: 200px;                 /* width: 10ch largura equivalente a 10 letras (10ch) */
+    background-color: #191970;
+    border-radius: 15px;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    margin: 10px auto 10px auto;  /* Cima, Direita, Baixo, Esquerda */
+    overflow: hidden; 
+}
+.BlocoInfoEmail {
+    height: 50px;
+    width: 190px;
+    border-radius: 10px; 
+    border: none;
+    outline: none;
+    box-sizing: border-box;   
+}
+
+.BotaoEnviarCod {
+    height: 30px;
+    width: 100px;
+    margin-left: 200px;
+    background-color:#191970;
+    color: #fefeff;
+    margin-top: 30px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.PrgEmail {
+    height: 40px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 135px;
+    color: #191970;
+}

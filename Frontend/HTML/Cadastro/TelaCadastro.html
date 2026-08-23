@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/Frontend/CSS/Cadastro/TelaCadastro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="BlocoGeral">
+
+        <h1 class="TituloLogin">Faça seu Cadastro</h1>
+        <p class="PrgLogin">Coloque suas Informações abaixo.</p>
+
+        <!-- ALTERAR BLOCOS DE CADASTRO (USUARIO,EMAIL,SENHA) PARA TAG (FORM) -->
+        <h3 class="TituloUser">Usuario</h3>
+
+        <div class="BlocoUser"> 
+            <input class="BlocoInfoUser" type="text" type="text" id="User" name="User" required> <!-- Tipo especifico para usuario -->
+        </div>
+        
+        <h3 class="TituloEmail">E-mail</h3>
+
+        <div class="BlocoEmail">
+            <input class="BlocoInfoEmail" type="email" id="email" name="email" required> <!-- Tipo especifico para email -->
+        </div>
+
+        <h3 class="TituloSenha">Senha</h3>
+        
+        <div class="BlocoSenha">
+            <input class="BlocoInfoSenha" type="password" id="senha" name="senha" required> <!-- Tipo especifico para senha -->
+        </div>
+
+        <button class="BotaoCadastrar" type="submit">Cadastrar</button>
+
+    </div>
+
+</body>
+</html>

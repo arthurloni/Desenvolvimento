@@ -10,29 +10,30 @@
     
     <div class="BlocoGeral">
 
-        <h1 class="TituloLogin">Faça seu Cadastro</h1>
+        <h1 class="TituloLogin">Faça seu Cadastro.</h1>
         <p class="PrgLogin">Coloque suas Informações abaixo.</p>
 
-        <!-- ALTERAR BLOCOS DE CADASTRO (USUARIO,EMAIL,SENHA) PARA TAG (FORM) -->
-        <h3 class="TituloUser">Usuario</h3>
+        <form class="BlocoForm">
+            <h3 class="TituloUser">Usuario</h3>
 
-        <div class="BlocoUser"> 
-            <input class="BlocoInfoUser" type="text" type="text" id="User" name="User" required> <!-- Tipo especifico para usuario -->
-        </div>
-        
-        <h3 class="TituloEmail">E-mail</h3>
+            <div class="BlocoUser"> 
+                <input class="BlocoInfoUser" type="text" type="text" id="User" name="User" required> <!-- Tipo especifico para usuario -->
+            </div>
+            
+            <h3 class="TituloEmail">E-mail</h3>
 
-        <div class="BlocoEmail">
-            <input class="BlocoInfoEmail" type="email" id="email" name="email" required> <!-- Tipo especifico para email -->
-        </div>
+            <div class="BlocoEmail">
+                <input class="BlocoInfoEmail" type="email" id="email" name="email" required> <!-- Tipo especifico para email -->
+            </div>
 
-        <h3 class="TituloSenha">Senha</h3>
-        
-        <div class="BlocoSenha">
-            <input class="BlocoInfoSenha" type="password" id="senha" name="senha" required> <!-- Tipo especifico para senha -->
-        </div>
+            <h3 class="TituloSenha">Senha</h3>
+            
+            <div class="BlocoSenha">
+                <input class="BlocoInfoSenha" type="password" id="senha" name="senha" required> <!-- Tipo especifico para senha -->
+            </div>
 
-        <button class="BotaoCadastrar" type="submit">Cadastrar</button>
+            <button class="BotaoCadastrar" type="submit">Cadastrar</button>
+        </form>
 
     </div>
 

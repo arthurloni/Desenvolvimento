@@ -1,0 +1,22 @@
+{
+  "name": "desenvolvimento",
+  "version": "1.0.0",
+  "description": "Foi criado esse repositório com foco no aprendizagem de varias habilidades diferentes, principalmente para evoluir como desenvolvedor ADVPL/TLPP, Aprendendo a mexer com POUI, ferramenta do Protheus que trabalha com Angular para criação de telas front-ent otimizadas e customizadas, trabalhando com JavaScript,TypeScript,Html,Css.\r Focando também em lógica de negócio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurloni/Desenvolvimento.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arthurloni/Desenvolvimento/issues"
+  },
+  "homepage": "https://github.com/arthurloni/Desenvolvimento#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

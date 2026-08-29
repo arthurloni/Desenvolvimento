@@ -18,6 +18,7 @@
   "homepage": "https://github.com/arthurloni/Desenvolvimento#readme",
   "dependencies": {
     "express": "^5.2.1",
+    "nodemon": "^3.1.14",
     "readline-sync": "^1.4.10"
   }
 }

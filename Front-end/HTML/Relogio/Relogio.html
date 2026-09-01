@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/Front-end/CSS/Relogio/Relogio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project01Clock</title>
+</head>
+<body>        
+    <div class="block-public">
+        <div class="Block-Clock">
+            <h1 id="Date"></h1>
+
+            <div class="Block-Clock-Hours">
+                <div class="Values-hours" id="hours"></div>
+            </div>
+
+            <div class="Block-Clock-Minutes">
+                <div class="Values-Minutes" id="minutes"></div>
+            </div>
+
+            <div class="Block-Clock-Seconds">
+                <div class="Values-Seconds" id="seconds"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script> // Codigo JS para atualizar horario
+        function UpdateHours() {
+            const agora = new Date();
+            const data = agora.toLocaleDateString();
+            const hours = agora.getHours();
+            const minutes = agora.getMinutes();
+            const seconds = agora.getSeconds();
+
+            document.getElementById('Date').textContent = data;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+        setInterval(() => {location.reload();}, 1000); // Atualizando a cada 1 segundo
+        UpdateHours()
+    </script>
+</body>
+</html> 

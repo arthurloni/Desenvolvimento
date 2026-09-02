@@ -11,7 +11,7 @@ function RegisterUser() {
     if (userId !== userName || passwordId !== password) {
         alert("User and password error, please config or solicit support adm")
     } else {
-        alert("Login realizado com sucesso")
+        alert("Login Success")
     }
 }
 

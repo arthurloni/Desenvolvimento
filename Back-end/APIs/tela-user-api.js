@@ -13,6 +13,7 @@ let registerUser = [
     password:"admin"}                     
 ];
 
+// Endpoint criado para realizar o LOGIN utilizando Usuario x Senha ja existente.
 app.post('/api/login', (req, res) => {
     const { name, password } = req.body;
 
@@ -31,6 +32,13 @@ app.post('/api/login', (req, res) => {
     const { password: _, ...usuarioSemSenha } = usuarioEncontrado;
     res.status(200).json(usuarioSemSenha);
 });
+
+// Endpoint criado para realizar o cadastro de um usuario não existente.
+app.post('/api/create', (req, res) => {
+    let novoUsuario = [{
+        // Lugar onde vai passado os valores para cadastrar um novo usuario.
+    }]
+}) 
 
 // Inicializando servidor na porta configurada
 app.listen(port, () => {

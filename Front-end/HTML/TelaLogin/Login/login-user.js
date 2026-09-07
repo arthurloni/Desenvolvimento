@@ -1,9 +1,10 @@
 async function RegisterUser() {
     const nameid = document.getElementById('User').value // continua pegando do mesmo input
     const passwordId = document.getElementById('password').value
+    const url = 'http://localhost:3000/api/login'
 
     try {
-        const response = await fetch('http://localhost:3000/api/login', {
+        const response = await fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

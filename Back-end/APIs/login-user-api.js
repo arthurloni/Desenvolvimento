@@ -13,7 +13,6 @@ let registerUser = [
     password:"admin"}                     
 ];
 
-// 1 - Primeiro Method (Recebendo os usuarios | GET)
 app.post('/api/login', (req, res) => {
     const { name, password } = req.body;
 

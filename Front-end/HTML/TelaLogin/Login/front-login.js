@@ -9,9 +9,10 @@ function RegisterUser() {
 
     // Valida user x password
     if (userId !== userName || passwordId !== password) {
-        alert("User and password error, please config or solicit support adm")
+        alert("User or password error, Please request support from the administrator.")
     } else {
-        alert("Login Success")
+        // window.location.replace("/Front-end/HTML/TelaLogin/TelaInicial/TelaInicio.html") // Levando para outra pagina, sem deixar o (voltar) disponivel após informar a senha correta
+        window.location.href = "/Front-end/HTML/TelaLogin/TelaInicial/TelaInicio.html"
     }
 }
 

@@ -1,4 +1,4 @@
-async function RegisterUser() {
+async function LoginUser() {
     const nameid = document.getElementById('User').value // continua pegando do mesmo input
     const passwordId = document.getElementById('password').value
     const url = 'http://localhost:3000/api/login'
@@ -36,5 +36,5 @@ async function RegisterUser() {
 
 document.querySelector('.BotaoEntrar').addEventListener('click', function(event) {
     event.preventDefault()
-    RegisterUser()
+    LoginUser()
 })

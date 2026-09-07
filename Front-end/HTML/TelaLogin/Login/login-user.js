@@ -1,23 +1,38 @@
-// CODIGO DESENVOLVIDO PARA ESTUDOS, SEM PADRÃO DE SEGURANÇA, POR ISSO (USER X PASSWORD) DENTRO DO CODIGO
-function RegisterUser() {
-    const userName = "admin"
-    const password = "admin"
-
-    // Metodo de busca em toda pagina para aquele elemento especifico
-    const userId = document.getElementById('User').value // recebe valor digitado pelo user
+async function RegisterUser() {
+    const nameid = document.getElementById('User').value // continua pegando do mesmo input
     const passwordId = document.getElementById('password').value
 
-    // Valida user x password
-    if (userId !== userName || passwordId !== password) {
-        alert("Usuario ou senha errados, Por favor entrar em contato com administrador do sistema.")
-    } else {
-        // window.location.replace("/Front-end/HTML/TelaLogin/TelaHome/TelaHome.html") // Levando para outra pagina, sem deixar o (voltar) disponivel após informar a senha correta
-        window.location.href = "/Front-end/HTML/TelaLogin/TelaHome/TelaHome.html"
+    try {
+        const response = await fetch('http://localhost:3000/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: nameid,
+                password: passwordId
+            })
+        })
+
+        if (!response.ok) {
+            alert("Usuario ou senha estão errados, Por favor entre em contato com administrador do sistema.")
+            return
+        }
+
+        const usuario = await response.json()
+        console.log("Login OK:", usuario)
+
+        // Guarda o usuário logado (mesmo sem token, pra lembrar quem está logado)
+        localStorage.setItem('usuarioLogado', JSON.stringify(usuario))
+
+        window.location.replace("/Front-end/HTML/TelaLogin/TelaHome/TelaHome.html")
+    } catch (error) {
+        console.error('Erro na requisição:', error)
+        alert("Erro ao conectar com o servidor. Tente novamente.")
     }
 }
 
-// Lendo conteudo da class do css, verifica se alguem clicou no botao, função que roda no momento do clique, parametro do navegador
 document.querySelector('.BotaoEntrar').addEventListener('click', function(event) {
-    event.preventDefault() // cancela o recarregamento da pagina por meu html ter um form, acaba sendo lido como um formulario e normalmente recarerga a pagina
-    RegisterUser()         // chama a função, validação antes da chamada feita para so entrar quando tiver clique no botão
+    event.preventDefault()
+    RegisterUser()
 })

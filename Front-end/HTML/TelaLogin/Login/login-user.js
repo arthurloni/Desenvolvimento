@@ -1,7 +1,7 @@
 // CODIGO DESENVOLVIDO PARA ESTUDOS, SEM PADRÃO DE SEGURANÇA, POR ISSO (USER X PASSWORD) DENTRO DO CODIGO
 function RegisterUser() {
     const userName = "admin"
-    const password = "1234"
+    const password = "admin"
 
     // Metodo de busca em toda pagina para aquele elemento especifico
     const userId = document.getElementById('User').value // recebe valor digitado pelo user
@@ -9,10 +9,10 @@ function RegisterUser() {
 
     // Valida user x password
     if (userId !== userName || passwordId !== password) {
-        alert("User or password error, Please request support from the administrator.")
+        alert("Usuario ou senha errados, Por favor entrar em contato com administrador do sistema.")
     } else {
-        // window.location.replace("/Front-end/HTML/TelaLogin/TelaInicial/TelaInicio.html") // Levando para outra pagina, sem deixar o (voltar) disponivel após informar a senha correta
-        window.location.href = "/Front-end/HTML/TelaLogin/TelaInicial/TelaInicio.html"
+        // window.location.replace("/Front-end/HTML/TelaLogin/TelaHome/TelaHome.html") // Levando para outra pagina, sem deixar o (voltar) disponivel após informar a senha correta
+        window.location.href = "/Front-end/HTML/TelaLogin/TelaHome/TelaHome.html"
     }
 }
 

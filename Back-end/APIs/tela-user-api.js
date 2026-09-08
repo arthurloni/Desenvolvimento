@@ -13,6 +13,10 @@ let registerUser = [
     password:"admin"}                     
 ];
 
+app.get('/api/users', (req,res) => {
+    res.json(registerUser)
+}) 
+
 // Endpoint criado para realizar o LOGIN utilizando Usuario x Senha ja existente.
 app.post('/api/login', (req, res) => {
     const { name, password } = req.body;
@@ -35,9 +39,24 @@ app.post('/api/login', (req, res) => {
 
 // Endpoint criado para realizar o cadastro de um usuario não existente.
 app.post('/api/create', (req, res) => {
+    const { name, email, password } = req.body;
+
+    if (!name || !email || !password) {
+        return res.status(400).json({ error: "Todos os campos são obrigatórios." });
+    }
+
     let novoUsuario = [{
-        // Lugar onde vai passado os valores para cadastrar um novo usuario.
+        id: registerUser.length + 1,
+        name: name,
+        email: email,
+        password: password
     }]
+    
+    registerUser.push(novoUsuario);
+    res.status(201).json({
+        mensagem: "Usuario cadastrado com sucesso.",
+        user: novoUsuario
+    })
 }) 
 
 // Inicializando servidor na porta configurada

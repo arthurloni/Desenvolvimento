@@ -23,8 +23,6 @@ async function CadastroUser() {
         // Guarda o usuário logado (mesmo sem token, pra lembrar quem está logado)
         localStorage.setItem('usuarioLogado', JSON.stringify(usuario))
 
-        // window.location.replace() -> Para carregar nova pagina sem deixar voltar para anterior
-        // window.location.assign("/Front-end/HTML/TelaLogin/TelaHome/TelaHome.html") // Posibilita voltar para anterior
     } catch (error) {
         console.error('Erro na requisição:', error)
         alert("Erro ao conectar com o servidor. Tente novamente.")

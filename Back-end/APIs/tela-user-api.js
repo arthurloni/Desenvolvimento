@@ -13,9 +13,10 @@ let registerUser = [
     password:"admin"}                     
 ];
 
-app.get('/api/users', (req,res) => {
+// Endpoit focado em mostrar os usuarios cadastrados
+app.get('/api/acesso', (req,res) => {
     res.json(registerUser)
-}) 
+})
 
 // Endpoint criado para realizar o LOGIN utilizando Usuario x Senha ja existente.
 app.post('/api/login', (req, res) => {
@@ -24,7 +25,7 @@ app.post('/api/login', (req, res) => {
     if (!name || !password) {
         return res.status(400).json({ mensagem: 'Usuario e senha são obrigatórios.' });
     }
-
+    // Find -> percorre o array item por item ate localizar a informação correta, retornando o item por inteiro, caso ele nao ache, ele retorna undefined
     const usuarioEncontrado = registerUser.find(
         (user) => user.name === name && user.password === password
     );
@@ -45,12 +46,12 @@ app.post('/api/create', (req, res) => {
         return res.status(400).json({ error: "Todos os campos são obrigatórios." });
     }
 
-    let novoUsuario = [{
+    let novoUsuario = { // Tive dificuldade em ajustar a regra para login desse objeto, pois coloquei dentro de um array [{}]
         id: registerUser.length + 1,
         name: name,
         email: email,
         password: password
-    }]
+    }
     
     registerUser.push(novoUsuario);
     res.status(201).json({
@@ -61,5 +62,5 @@ app.post('/api/create', (req, res) => {
 
 // Inicializando servidor na porta configurada
 app.listen(port, () => {
-    console.log(`Server run in http://localhost:${port}`)
+    console.log(`Serviço em http://localhost:${port}`)
 });

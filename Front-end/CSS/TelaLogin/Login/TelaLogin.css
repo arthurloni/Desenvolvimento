@@ -88,9 +88,9 @@ body {
 .EsqueciSenha {
     display: block;
     margin-top: 5px;
-    margin-left: 157px;
+    margin-left: 155px;
     color: #0000fa; 
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -107,7 +107,7 @@ body {
 
 .CriarConta {
     display: block;
-    margin-left: 150px;
+    margin-left: 135px;
     margin-top: 20px;
     font-size: 12px;
     text-decoration: none;
@@ -115,10 +115,10 @@ body {
 
 .Text1 {
     color: #000000;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .Text2 {
     color: #0101ff;
-    font-size: 14px;
+    font-size: 16px;
 }

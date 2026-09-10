@@ -19,9 +19,22 @@ async function CadastroUser() {
 
         const usuario = await response.json()
         console.log("Cadastro realizado:", usuario)
-
+        
         // Guarda o usuário logado (mesmo sem token, pra lembrar quem está logado)
-        localStorage.setItem('usuarioLogado', JSON.stringify(usuario))
+        localStorage.setItem('usuarioLogado', JSON.stringify(usuario.user))
+        
+        // Personalizado mensagem temporaria
+        const elemento = document.getElementById('Mensagem-site')
+        if (elemento) {
+            document.getElementById('User').value = "" // "Atualizando" campos
+            document.getElementById('email').value = ""
+            document.getElementById('password').value = ""
+            elemento.textContent = "Cadastro realizado com sucesso."
+            elemento.style.color = "#191970"
+            elemento.style.textAlign = "center"
+            elemento.style.marginTop = "10px"
+            elemento.style.fontSize = "18px"
+        }
 
     } catch (error) {
         console.error('Erro na requisição:', error)

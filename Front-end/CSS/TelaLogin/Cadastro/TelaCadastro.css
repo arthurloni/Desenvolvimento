@@ -113,13 +113,19 @@ body {
     box-sizing: border-box;    
 }
 
+.Mensagem-site {
+    color: #191970;
+    text-align: center;
+    font-size: 16px;
+}
+
 .BotaoCadastrar {
     height: 30px;
     width: 100px;
     margin-left: 200px;
     background-color:#191970;
     color: #fefeff;
-    margin-top: 30px;
+    margin-top: 15px;
     border-radius: 30px;
     outline: none;
 }

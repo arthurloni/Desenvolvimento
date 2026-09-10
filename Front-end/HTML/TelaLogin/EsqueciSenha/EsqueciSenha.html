@@ -28,7 +28,19 @@
 
             <button class="BotaoEnviarCod" type="submit">Enviar</button>
 
-            <p class="PrgEmail">Um codigo foi enviado ao seu E-mail.</p>
+            <div id="CodigoEmail">
+                <script>
+                    const elemento = document.getElementById('CodigoEmail')
+                    if (elemento) {
+                        elemento.textContent = "Um codigo foi enviado ao seu E-mail."
+                        elemento.style.color = "#191970"
+                        elemento.style.textAlign = "center"
+                        elemento.style.marginTop = "10px"
+                        elemento.style.fontSize = "18px"
+                    }
+                </script>
+            </div>
+            
         </form>
 
     </div>

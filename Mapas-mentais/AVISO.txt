@@ -1,0 +1,4 @@
+Esse arquivo foi criado para notificar sobre como abrir o mapa mental.
+Por favor tenha a extensão do EXCALIDRAW no seu VSCODE ou utilize via o site deles: https://excalidraw.com/
+para ter os detalhes e a cores do mapa mental, caso deseja utilizar outro lugar, por favor pegue o codigo aberto e jogue em algum programa de mapa mental que ler codigo
+e pode criar para vc seguindo o mesmo padrão de texto.

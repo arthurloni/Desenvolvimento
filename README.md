@@ -1,4 +1,4 @@
-# Estudos-Dev
+# Estudos desenvolvimento, exercicios, projetos, mapas mentais
 
 Este repositório foi criado com foco na aprendizagem de várias habilidades diferentes, principalmente para evoluir como desenvolvedor ADVPL/TLPP.
 
